@@ -1,0 +1,27 @@
+import { AppBar } from "@/components/landing/src/AppBar";
+import { HeroMessage } from "@/components/landing/src/HeroMessage";
+import { ContainerScroll } from "@/components/ui/container-scroll-animation";
+import { EssentialSection } from "@/components/landing/src/EssentialSection";
+import { FAQ } from "@/components/landing/src/FAQ";
+import { Footer } from "@/components/landing/src/Footer";
+import { Services } from "@/components/landing/src/Services";
+import { Testimonials } from "@/components/landing/src/Testimonials";
+import { TextHoverEffect } from "@/components/ui/text-hover-effect";
+
+export default function Landing() {
+  return (
+    <>
+      <AppBar />
+      <ContainerScroll>
+        <img src="./dashboard-ex.jpg" alt="" />
+      </ContainerScroll>
+      <HeroMessage />
+      <EssentialSection />
+      <Services />
+      <Testimonials />
+      <FAQ />
+      <TextHoverEffect text="CLEVEN" />
+      <Footer />
+    </>
+  );
+}
