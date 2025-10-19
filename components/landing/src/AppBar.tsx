@@ -22,29 +22,35 @@ export const AppBar = () => {
           <div id="cleven_logo">
             <Link href="/" className="flex items-center gap-3">
               <img
-                src="./Cleven removeBg.png"
-                alt="cleven.studio"
+                src="../../../public/advona-logo.png"
+                alt="Advona.co"
                 className="h-10 object-cover cursor-pointer"
               />
-              <h2 className="text-lg">Cleven.Studio</h2>
+              <h2 className="text-lg">Advona.co</h2>
             </Link>
           </div>
 
-          {/* Desktop Nav */}
+          {/* Desktop Nav
           <ul className="hidden md:flex items-center gap-14 text-[#D9D9D9]">
             <Link href="#" className="text-[1.1rem] hover:scale-110 transition">
               Services
             </Link>
-            <Link href="/help-center" className="text-[1.1rem] hover:scale-110 transition">
+            <Link
+              href="/help-center"
+              className="text-[1.1rem] hover:scale-110 transition"
+            >
               Help
             </Link>
-            <Link href="./insights" className="text-[1.1rem] hover:scale-110 transition">
+            <Link
+              href="./insights"
+              className="text-[1.1rem] hover:scale-110 transition"
+            >
               Insight's
             </Link>
             <Link href="/signup">
               <InteractiveHoverButton>Join Us</InteractiveHoverButton>
             </Link>
-          </ul>
+          </ul> */}
 
           {/* Mobile Menu Button */}
           <div className="md:hidden fixed top-4 right-4 z-[60] text-[#D9D9D9]">
@@ -87,9 +93,15 @@ export const AppBar = () => {
         } duration-300 z-50 shadow-lg`}
       >
         <ul className="flex flex-col h-full items-center justify-evenly text-lg">
-          <Link href="#" className="hover:scale-110 border-b pb-2">Services</Link>
-          <Link href="/help-center" className="hover:scale-110 border-b pb-2">Help</Link>
-          <Link href="./insights" className="hover:scale-110 border-b pb-2">Insight's</Link>
+          <Link href="#" className="hover:scale-110 border-b pb-2">
+            Services
+          </Link>
+          <Link href="/help-center" className="hover:scale-110 border-b pb-2">
+            Help
+          </Link>
+          <Link href="./insights" className="hover:scale-110 border-b pb-2">
+            Insight's
+          </Link>
           <Link href="/signup">
             <InteractiveHoverButton>Join Us</InteractiveHoverButton>
           </Link>
