@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  advona-fe:
+    build:
+      context: ./
+      dockerfile: ./dockerfile
+    ports:
+      - "3001:3001"
