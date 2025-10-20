@@ -7,6 +7,7 @@ import { Footer } from "@/components/landing/src/Footer";
 import { Services } from "@/components/landing/src/Services";
 import { Testimonials } from "@/components/landing/src/Testimonials";
 import { TextHoverEffect } from "@/components/ui/text-hover-effect";
+import Choose from "./src/choose";
 
 export default function Landing() {
   return (
@@ -17,6 +18,7 @@ export default function Landing() {
       </ContainerScroll>
       <HeroMessage />
       <EssentialSection />
+      <Choose />
       <Services />
       <Testimonials />
       <FAQ />
