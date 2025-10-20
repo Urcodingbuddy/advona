@@ -22,7 +22,7 @@ export const AppBar = () => {
           <div id="cleven_logo">
             <Link href="/" className="flex items-center gap-3">
               <img
-                src="../../../public/advona-logo.png"
+                src="./advona-logo.png"
                 alt="Advona.co"
                 className="h-10 object-cover cursor-pointer"
               />
@@ -30,9 +30,9 @@ export const AppBar = () => {
             </Link>
           </div>
 
-          {/* Desktop Nav
+        {/* Desktop Nav */}
           <ul className="hidden md:flex items-center gap-14 text-[#D9D9D9]">
-            <Link href="#" className="text-[1.1rem] hover:scale-110 transition">
+           {/* <Link href="#" className="text-[1.1rem] hover:scale-110 transition">
               Services
             </Link>
             <Link
@@ -46,11 +46,11 @@ export const AppBar = () => {
               className="text-[1.1rem] hover:scale-110 transition"
             >
               Insight's
-            </Link>
+            </Link> */}            
             <Link href="/signup">
               <InteractiveHoverButton>Join Us</InteractiveHoverButton>
             </Link>
-          </ul> */}
+          </ul>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden fixed top-4 right-4 z-[60] text-[#D9D9D9]">
