@@ -66,8 +66,8 @@ export const PunchLine = () => {
       className="relative pt-16 gap-5 sm:pt-24 md:pt-32 lg:pt-40 xl:pt-48 flex flex-col items-center justify-center px-6 sm:px-10 md:px-16 mx-auto min-h-[80vh] md:min-h-[90vh] bg-[#0c0c0c]"
     >
       <div className="relative w-full">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 text-left md:text-center max-w-4xl sm:max-w-5xl md:max-w-6xl lg:max-w-7xl mx-auto pt-12 sm:pt-8 md:pt-6 pb-4 sm:pb-6 md:pb-10">
-          Igniting Growth, Engineering Impact.{" "}
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 text-left md:text-center max-w-4xl sm:max-w-5xl md:max-w-6xl lg:max-w-7xl mx-auto pt-12 sm:pt-8 md:pt-6 pb-4 sm:pb-6 md:pb-10">
+        Igniting Growth, Engineering Impact. <br/> {" "}
           <span className="bg-[#71d5f0db] bg-clip-text text-transparent animate-pulse">
             Redefining What’s Possible
           </span>
