@@ -25,7 +25,7 @@
       "@/components/common/*":["./components/common/*"],
       "@/components/skeletons/*":["./components/skeletons/*"],
       "@/packages/ui/*":["../../packages/ui/src/*"],
-      "@/lib/hooks/*": ["/lib/hooks/*"],
+      "@/lib/hooks/*": ["./lib/hooks/*"],
       "@/lib/*": ["./lib/*"]
     }
   },
