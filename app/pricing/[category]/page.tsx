@@ -4,16 +4,17 @@ import { useParams } from "next/navigation";
 import { Check } from "lucide-react";
 
 const categoryDisplayNames: Record<string, string> = {
-  "bug-fixing": "Bug Fixing",
-  "web-maintenance": "Web Maintenance",
-  "content-update": "Content Update",
-  "mvp": "Minimum Viable Product",
-  "speed-optimization": "Speed Optimization",
+  "web-design": "Web design",
+  "minimum-viable-product": "Minimum Viable Product",
+  "core-paid-marketing": "Core Paid Maketing",
+  "email-outreach": "Email Outreach",
+  "user-generated-content": "User Generated Content",
+  "high-end-strategic-services":"High End Strategic Services"
 };
 
 export default function Pricing() {
   const params = useParams();
-  const category = (params?.category as string) || "bug-fixing";
+  const category = (params?.category as string) || "web-design";
   const plans = getPlansByCategory(category);
 
   return (

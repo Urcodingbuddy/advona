@@ -13,11 +13,12 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { name: "Home", href: "/" },
+  { name: "Web design", href: "/pricing/web-design" },
   { name: "MVP", href: "/pricing/minimum-viable-product" },
-  { name: "CPM", href: "/pricing/core-paid-marketing" },
+  { name: "Maketing", href: "/pricing/core-paid-marketing" },
   { name: "Email Outreach", href: "/pricing/email-outreach" },
   { name: "UCG", href: "/pricing/user-generated-content" },
-  { name: "Strategic Services", href: "/pricing/strategic-service" },
+  { name: "Strategic Services", href: "/pricing/high-end-strategic-services" },
 ];
 
 export default function PricingLayout({ children }: { children: React.ReactNode }) {
