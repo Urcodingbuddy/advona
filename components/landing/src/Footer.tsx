@@ -11,13 +11,13 @@ export const Footer = () => {
             <div>
               <Link href="/">
                 <img
-                  src="./Cleven removeBg.png"
+                  src="./advona-logo.png"
                   alt="cleven.studio"
                   className="h-12 object-cover cursor-pointer"
                 />
               </Link>
             </div>
-            <span className="text-xl font-bold">Cleven.Studio</span>
+            <span className="text-xl font-bold">Advona.co</span>
           </div>
           <p className="text-gray-300 text-sm leading-relaxed font-medium">
             Cleven.studio is the go-to platform for startups and businesses
@@ -35,22 +35,28 @@ export const Footer = () => {
           <ul className="space-y-4">
             {[
               {
-                name: "Website Maintenance & Support",
-                link: "/pricing/web-maintenance",
-              },
-              { name: "Bug Fixing & Debugging", link: "/pricing/bug-fixing" },
-              {
-                name: "Content Update & Management",
-                link: "/pricing/content-update",
-              },
-              { name: "Minimum Viable Product (MVP)", link: "/pricing/mvp" },
-              {
-                name: "Website Speed Optimization",
-                link: "/pricing/speed_optimization",
+                name: "Web design",
+                link: "/pricing/web-design",
               },
               {
-                name: "Social Media Integration",
-                link: "/pricing/social_media",
+                name: "Core-paid-marketing",
+                link: "/pricing/core-paid-marketing",
+              },
+              {
+                name: "Email Outreach",
+                link: "/pricing/email-outreach",
+              },
+              {
+                name: "Minimum Viable Product (MVP)",
+                link: "/pricing/minimum-viable-product",
+              },
+              {
+                name: "User generated Content",
+                link: "/pricing/user-generated-content",
+              },
+              {
+                name: "High‑End Strategic Services",
+                link: "/pricing/high-end-strategic-services",
               },
             ].map((item) => (
               <li key={item.name}>
@@ -91,7 +97,7 @@ export const Footer = () => {
         <div className="space-y-8 sm:space-y-12 mt-5">
           <div className="space-y-4">
             <h3 className="text-sm font-semibold tracking-wider">
-              MORE FROM CLEVEN.STUDIO
+              MORE FROM ADVONA.CO
             </h3>
             <ul className="space-y-4">
               {[
@@ -122,20 +128,27 @@ export const Footer = () => {
             <ul className="space-y-4">
               {[
                 { name: "Terms & Conditions", link: "/legal#terms" },
-                { name: "Privacy Policy", link: "/privacy-policy" },
-                { name: "Refund Policy", link: "/refund" },
                 {
-                  name: "support@cleven.studio",
-                  link: "mailto:support@cleven.studio",
+                  name: "Privacy Policy",
+                  link: "https://drive.google.com/file/d/1guVWNChCtbX8kR9W2QZyLotlsCC8G9c7/view?usp=sharing",
+                },
+                {
+                  name: "Refund Policy",
+                  link: "https://drive.google.com/file/d/1mHTZbWokxAxX_hWdJh6cruuGgNow00El/view?usp=sharing",
+                },
+                {
+                  name: "advona.co@gmail.com",
+                  link: "mailto:advona.co@gmail.com",
                 },
               ].map((item) => (
                 <li key={item.name}>
-                  <Link
+                  <a
                     href={item.link}
+                    target="_blank"
                     className="text-sm text-gray-400 hover:text-white transition-colors"
                   >
                     {item.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
