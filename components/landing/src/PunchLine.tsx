@@ -63,15 +63,20 @@ export const PunchLine = () => {
   return (
     <div
       ref={containerRef}
-      className="relative pt-16 gap-5 sm:pt-24 md:pt-32 lg:pt-40 xl:pt-48 flex flex-col items-center justify-center px-6 sm:px-10 md:px-16 mx-auto min-h-[80vh] md:min-h-[90vh] bg-[#0c0c0c]"
+      className="relative pt-16 gap-5 sm:pt-24 md:pt-32 lg:pt-40 xl:pt-48 flex flex-col items-center justify-center px-6 sm:px-10 md:px-16 mx-auto min-h-[80vh] md:min-h-[90vh] bg-[#0c0c0c] bg-[#0c0c0c] "
     >
       <div className="relative w-full">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 text-left md:text-center max-w-4xl sm:max-w-5xl md:max-w-6xl lg:max-w-7xl mx-auto pt-12 sm:pt-8 md:pt-6 pb-4 sm:pb-6 md:pb-10">
-        Igniting Growth, Engineering Impact. <br/> {" "}
+        <motion.h1
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 text-left md:text-center max-w-4xl sm:max-w-5xl md:max-w-6xl lg:max-w-7xl mx-auto pt-12 sm:pt-8 md:pt-6 pb-4 sm:pb-6 md:pb-10"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0 }}
+        >
+          Igniting Growth, Engineering Impact. <br />{" "}
           <span className="bg-[#71d5f0db] bg-clip-text text-transparent animate-pulse">
             Redefining What’s Possible
           </span>
-        </h1>
+        </motion.h1>
       </div>
 
       <div className="flex flex-col items-center relative z-10 w-full">
@@ -79,7 +84,7 @@ export const PunchLine = () => {
           className="text-zinc-400 text-sm sm:text-base md:text-lg font-medium text-left md:text-center leading-relaxed max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl mb-6 sm:mb-12 md:mb-16"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.3 }}
+          transition={{ duration: 1, delay: 0 }}
         >
           Say goodbye to chaotic launches and scattered strategies. Advona
           builds, markets, and scales your product into a brand that thrives.
@@ -93,7 +98,7 @@ export const PunchLine = () => {
           whileTap={{ scale: 0.95 }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          transition={{ duration: 0.5, delay: 0 }}
         >
           <motion.p
             className="text-sm sm:text-base font-semibold text-zinc-400 group-hover:text-zinc-200"
