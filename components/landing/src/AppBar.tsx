@@ -47,9 +47,13 @@ export const AppBar = () => {
             >
               Insight's
             </Link>
-            <Link href="/signup">
-              <InteractiveHoverButton>Join Us</InteractiveHoverButton>
-            </Link>
+            <a
+              href="https://api.whatsapp.com/send?phone=+919241392799"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <InteractiveHoverButton>Contact us</InteractiveHoverButton>
+            </a>
           </ul>
 
           {/* Mobile Menu Button */}
@@ -102,9 +106,13 @@ export const AppBar = () => {
           <Link href="./insights" className="hover:scale-110 border-b pb-2">
             Insight's
           </Link>
-          <Link href="/signup">
-            <InteractiveHoverButton>Join Us</InteractiveHoverButton>
-          </Link>
+          <a
+            href="https://api.whatsapp.com/send?phone=+919241392799"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <InteractiveHoverButton>Contact us</InteractiveHoverButton>
+          </a>
         </ul>
       </div>
     </>
