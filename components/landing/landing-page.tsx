@@ -22,7 +22,9 @@ export default function Landing() {
       <Services />
       <Testimonials />
       <FAQ />
-      <TextHoverEffect text="CLEVEN" />
+      <div className="h-[40rem] flex items-center justify-center">
+        <TextHoverEffect text="ADVONA" />
+      </div>
       <Footer />
     </>
   );
