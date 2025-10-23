@@ -14,7 +14,7 @@ export default function Landing() {
     <>
       <AppBar />
       <ContainerScroll>
-        <img src="./dashboard-ex.jpg" alt="" />
+        <img src="./advona-logo.png" alt="" />
       </ContainerScroll>
       <HeroMessage />
       <EssentialSection />
