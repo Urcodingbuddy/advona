@@ -14,7 +14,7 @@ export default function Landing() {
     <>
       <AppBar />
       <ContainerScroll>
-        <img src="./advona-logo.png" alt="" />
+        <img src="./facebookpeople.png" alt="" />
       </ContainerScroll>
       <HeroMessage />
       <EssentialSection />
