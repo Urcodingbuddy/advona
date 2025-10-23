@@ -111,7 +111,7 @@ export const AppBar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <InteractiveHoverButton>Contact us</InteractiveHoverButton>
+            <InteractiveHoverButton>Contact us.</InteractiveHoverButton>
           </a>
         </ul>
       </div>
