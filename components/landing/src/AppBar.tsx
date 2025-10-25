@@ -22,7 +22,7 @@ export const AppBar = () => {
           <div id="cleven_logo">
             <Link href="/" className="flex items-center gap-3">
               <img
-                src="./advona-logo.png"
+                src="./advona.png"
                 alt="Advona.co"
                 className="h-10 object-cover cursor-pointer"
               />

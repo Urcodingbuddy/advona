@@ -11,45 +11,37 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Bug Fixing & Debugging",
-    description:
-      "Get help with fixing bugs and resolving issues to ensure your website works flawlessly..",
+    title: "Minimum Viable Product",
+    description: "Data-driven insights to help grow your business.",
     icon: Bug,
     link: "/pricing/bug-fixing",
   },
   {
-    title: "Web Maintenance and support",
+    title: "Core paid marketing",
     description:
       "Keep your website running smoothly with ongoing support, maintenance, and updates.",
     icon: Code2,
     link: "/pricing/web-maintenance",
   },
   {
-    title: "Content Update & Management",
+    title: "Email Outreach",
     description:
       "Stay up-to-date with regular content updates, blog management, e-Commerce and other content services.",
     icon: Puzzle,
     link: "/pricing/content-update",
   },
   {
-    title: "Minimum Viable Product(MVP)",
+    title: "User Generated Content",
     description: "Data-driven insights to help grow your business.",
     icon: LineChart,
     link: "/pricing/mvp",
   },
   {
-    title: "Website Speed Optimization",
+    title: " High‑End Strategic Services",
     description:
       "Improve your website's performance and reduce load times with our optimization tools.",
     icon: Shield,
     link: "/pricing/speed-optimization",
-  },
-  {
-    title: "New Plans Coming Soon",
-    description:
-      "Stay tuned! Exciting new packages and services will be available soon.",
-    icon: Clock,
-    link: "/pricing/bug-fixing",
   },
 ];
 
@@ -81,7 +73,9 @@ export const Services = () => {
                 </div>
 
                 <h4 className="text-xl font-semibold mb-4">{service.title}</h4>
-                <p className="text-sm text-gray-400 mb-6">{service.description}</p>
+                <p className="text-sm text-gray-400 mb-6">
+                  {service.description}
+                </p>
 
                 <Link href={service.link}>
                   <button className="flex items-center text-sm font-medium cursor-pointer text-white/70 hover:text-white transition-colors duration-200">
