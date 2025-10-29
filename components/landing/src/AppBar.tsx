@@ -35,12 +35,12 @@ export const AppBar = () => {
             <Link href="#" className="text-[1.1rem] hover:scale-110 transition">
               Services
             </Link>
-            <Link
-              href="/help-center"
+            <a
+              href="https://discord.gg/CeBD2sjsQS"
               className="text-[1.1rem] hover:scale-110 transition"
             >
               Help
-            </Link>
+            </a>
             <Link
               href="./insights"
               className="text-[1.1rem] hover:scale-110 transition"
