@@ -11,7 +11,7 @@ export const Footer = () => {
             <div>
               <Link href="/">
                 <img
-                  src="./advona-logo.png"
+                  src="./advona.png"
                   alt="cleven.studio"
                   className="h-12 object-cover cursor-pointer"
                 />
