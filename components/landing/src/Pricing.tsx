@@ -1,47 +1,48 @@
 import {
   ArrowRight,
-  Code2,
-  Bug,
-  Puzzle,
-  LineChart,
-  Shield,
-  Clock,
+   Rocket,
+  Megaphone,
+  Mail,
+  Users,
+  Target,
 } from "lucide-react";
 import Link from "next/link";
 
 const services = [
   {
     title: "Minimum Viable Product",
-    description: "Data-driven insights to help grow your business.",
-    icon: Bug,
-    link: "/pricing/bug-fixing",
+    link: "/pricing/minimum-viable-product",
+    description:
+      "Launch your first version faster with our MVP development service — built to validate your idea and attract early users.",
+    icon: Rocket,
   },
   {
-    title: "Core paid marketing",
+    title: "Core Paid Marketing",
+    link: "/pricing/core-paid-marketing",
     description:
-      "Keep your website running smoothly with ongoing support, maintenance, and updates.",
-    icon: Code2,
-    link: "/pricing/web-maintenance",
+      "Accelerate growth with performance-driven advertising across major platforms to maximize ROI and conversions.",
+    icon: Megaphone,
   },
   {
     title: "Email Outreach",
+    link: "/pricing/email-outreach",
     description:
-      "Stay up-to-date with regular content updates, blog management, e-Commerce and other content services.",
-    icon: Puzzle,
-    link: "/pricing/content-update",
+      "Build and nurture relationships with personalized email campaigns that drive engagement and sales.",
+    icon: Mail,
   },
   {
     title: "User Generated Content",
-    description: "Data-driven insights to help grow your business.",
-    icon: LineChart,
-    link: "/pricing/mvp",
+    link: "/pricing/user-generated-content",
+    description:
+      "Leverage authentic customer content to increase trust, engagement, and organic brand growth.",
+    icon: Users,
   },
   {
-    title: " High‑End Strategic Services",
+    title: "High-End Strategic Services",
+    link: "/pricing/high-end-strategic-services",
     description:
-      "Improve your website's performance and reduce load times with our optimization tools.",
-    icon: Shield,
-    link: "/pricing/speed-optimization",
+      "Get top-tier consulting and strategic insights to scale your business and outperform competitors.",
+    icon: Target,
   },
 ];
 
@@ -76,7 +77,6 @@ export const Services = () => {
                 <p className="text-sm text-gray-400 mb-6">
                   {service.description}
                 </p>
-
                 <Link href={service.link}>
                   <button className="flex items-center text-sm font-medium cursor-pointer text-white/70 hover:text-white transition-colors duration-200">
                     View <ArrowRight className="ml-2 w-4 h-4" />
