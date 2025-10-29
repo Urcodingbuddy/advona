@@ -4,26 +4,26 @@ import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 const faqs = [
-  {
-    question: "What services does Cleven.studios offer?",
-    answer: "We offer a range of services, including website maintenance & support, SEO optimization, website speed optimization, bug fixing & debugging, content management for e-commerce, and social media integration. Our goal is to provide startups and businesses with high-quality yet affordable web solutions.",
-  },
-  {
-    question: "What is Cleven.studios' refund policy?",
-    answer: "We offer a 7-day refund policy on all our service packages. If you're not satisfied with our service within the first 7 days, you can request a full refund. However, refunds are not applicable once the project is completed or delivered. For more details, please check our refund policy page",
-  },
-  {
-    question: "How does the pricing work for your packages?",
-    answer: "Our packages come in Basic, Standard, and Premium plans to suit different needs and budgets. We also provide Add-On features for extended services. Pricing is transparent, and you only pay for what you need..",
-  },
-  {
-    question: "Can I customize a package based on my requirements?",
-    answer: "Absolutely! While our pre-built packages cover most needs, we understand that every business is unique. You can customize a package or opt for Add-On services to get exactly what you need.",
-  },
-  {
-    question: "How do I get started with Cleven.studios?",
-    answer: "You can sign up on our website and log in to your dashboard. From there, you can manage your services, choose a package, track your project progress, and access support. Our team will assist you every step of the way to ensure a smooth experience.",
-  },
+{
+question: "What services does Advona offer?",
+answer: "Advona provides a complete suite of creative and strategic solutions including MVP development, User-Generated Content (UGC) creation, core marketing campaigns, web design, and high-end strategic services tailored for startups and brands looking to scale fast.",
+},
+{
+question: "What is Advona’s refund policy?",
+answer: "We offer a 7-day refund policy for all service packages. If you’re not satisfied with our service within the first 7 days, you can request a full refund. Refunds are not available after a project has been completed or delivered. For complete details, please visit our refund policy page.",
+},
+{
+question: "How does your pricing work?",
+answer: "Our pricing is transparent and flexible. We provide tiered plans to fit different budgets and project scopes, along with optional Add-On services for extra features. You only pay for what you need — no hidden costs.",
+},
+{
+question: "Can I customize a service plan for my project?",
+answer: "Yes, absolutely. While our plans are designed to cover most business needs, you can fully customize your package or add individual services to fit your specific goals and timelines.",
+},
+{
+question: "How do I get started with Advona?",
+answer: "Simply reach out through our website or contact page to discuss your project. Our team will guide you through service selection, project planning, and execution to ensure everything runs smoothly from concept to delivery.",
+},
 ];
 
 export function FAQ() {
