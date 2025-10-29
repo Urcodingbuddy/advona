@@ -2,6 +2,7 @@
 import { getPlansByCategory } from "@/lib/hooks/useplans";
 import { useParams } from "next/navigation";
 import { Check } from "lucide-react";
+import GettingStarted from "@/components/ui/GettingStarted";
 
 const categoryDisplayNames: Record<string, string> = {
   "web-design": "Web design",
@@ -57,6 +58,10 @@ export default function Pricing() {
                     </li>
                   ))}
                 </ul>
+                 <GettingStarted
+                  category={category}
+                  plan={plan.name?.toLowerCase() || "bug-fixing"}
+                />
               </div>
             </div>
           ))}
