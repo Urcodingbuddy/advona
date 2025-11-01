@@ -10,7 +10,7 @@ export const EssentialSection = () => {
                <div id="essential_text" className="w-full mb-16 px-4" >
                   <div className="bg-clip-text text-3xl sm:text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
                   <h1 className="">Everything you need.</h1>
-                  <h2 className="">Nothing you don't</h2>
+                  <h2 className="">Nothing you don&rsquo;t</h2>
                   </div>
                   <p className="text-sm sm:text-md md:text-lg lg:text-xl font-medium pt-7" >
                      <span className="text-gray-500" >Effortless website management and optimization in one place.</span> <br />
