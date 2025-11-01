@@ -45,7 +45,7 @@ export const AppBar = () => {
               href="./insights"
               className="text-[1.1rem] hover:scale-110 transition"
             >
-              Insight's
+              Insight&rsquo;s
             </Link>
             <a
               href="https://api.whatsapp.com/send?phone=+919241392799"
@@ -104,7 +104,7 @@ export const AppBar = () => {
             Help
           </Link>
           <Link href="./insights" className="hover:scale-110 border-b pb-2">
-            Insight's
+            Insight&rsquo;s
           </Link>
           <a
             href="https://api.whatsapp.com/send?phone=+919241392799"
