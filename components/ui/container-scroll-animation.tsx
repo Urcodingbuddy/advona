@@ -56,7 +56,6 @@ export const ContainerScroll = ({
 export const Card = ({
   rotate,
   scale,
-  translate,
   children,
 }: {
   rotate: MotionValue<number>;
