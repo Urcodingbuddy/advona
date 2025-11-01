@@ -8,13 +8,16 @@ import { Services } from "@/components/landing/src/Pricing";
 import { Testimonials } from "@/components/landing/src/Testimonials";
 import { TextHoverEffect } from "@/components/ui/text-hover-effect";
 import Choose from "./src/choose";
+import Image from "next/image";
 
 export default function Landing() {
   return (
     <>
       <AppBar />
       <ContainerScroll>
-        <img src="./facebookpeople.png" alt="" />
+        <div className="h-[35rem]">
+            <img src="./dashboard-ref.png" alt="Image goes here" />
+        </div>
       </ContainerScroll>
       <HeroMessage />
       <EssentialSection />
