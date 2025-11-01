@@ -67,7 +67,7 @@ export const PunchLine = () => {
     >
       <div className="relative w-full">
         <motion.h1
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 text-left md:text-center max-w-4xl sm:max-w-5xl md:max-w-6xl lg:max-w-7xl mx-auto pt-12 sm:pt-8 md:pt-6 pb-4 sm:pb-6 md:pb-10"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 text-left md:text-center max-w-4xl sm:max-w-5xl md:max-w-6xl lg:max-w-7xl mx-auto pt-12 sm:pt-8 md:pt-6 pb-4 sm:pb-6 md:pb-10"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0 }}
