@@ -74,7 +74,7 @@ export const PunchLine = () => {
         >
           Igniting Growth, Engineering Impact. <br />{" "}
           <span className="bg-[#71d5f0db] bg-clip-text text-transparent animate-pulse">
-            Redefining What’s Possible
+            Redefining What&rsquo;s Possible
           </span>
         </motion.h1>
       </div>
