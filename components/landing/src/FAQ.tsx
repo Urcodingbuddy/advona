@@ -34,7 +34,7 @@ export function FAQ() {
       <div className="max-w-5xl mx-auto px-3 sm:px-6 lg:px-8 py-12 sm:py-24">
         <div className="text-center mb-8 sm:mb-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-8 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500">
-            Frequently Asked Questions&apos;s
+            Frequently Asked Questions&rsquo;s
           </h1>
           <p className="text-gray-400 text-sm sm:text-md md:text-lg lg:text-xl font-medium max-w-2xl mx-auto px-2 sm:px-0">
             Find answers to commonly asked questions about our services and processes.
