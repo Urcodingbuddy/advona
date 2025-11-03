@@ -15,9 +15,7 @@ export default function Landing() {
     <>
       <AppBar />
       <ContainerScroll>
-        <div className="h-[35rem]">
             <img src="./dashboard-ref.png" alt="Image goes here" />
-        </div>
       </ContainerScroll>
       <HeroMessage />
       <EssentialSection />
