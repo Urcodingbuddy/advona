@@ -63,7 +63,7 @@ export const PunchLine = () => {
   return (
     <div
       ref={containerRef}
-      className="relative pt-16 gap-5 sm:pt-24 md:pt-32 lg:pt-40 xl:pt-48 flex flex-col items-center justify-center px-6 sm:px-10 md:px-16 mx-auto min-h-[80vh] md:min-h-[90vh] bg-[#0c0c0c] bg-[#0c0c0c] "
+      className="relative pt-16 gap-5 sm:pt-24 md:pt-32 lg:pt-40 xl:pt-48 flex flex-col items-center justify-center px-6 sm:px-10 md:px-16 mx-auto bg-[#0c0c0c]"
     >
       <div className="relative w-full">
         <motion.h1
