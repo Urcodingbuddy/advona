@@ -1,21 +1,21 @@
-"use client"
+"use client";
 import { getPlansByCategory } from "@/lib/hooks/useplans";
 import { useParams } from "next/navigation";
 import { Check } from "lucide-react";
 import GettingStarted from "@/components/ui/GettingStarted";
 
 const categoryDisplayNames: Record<string, string> = {
-  "web-design": "Web design",
+  "digital-presence": "Digital Presence",
   "minimum-viable-product": "Minimum Viable Product",
   "core-paid-marketing": "Core Paid Maketing",
   "email-outreach": "Email Outreach",
   "user-generated-content": "User Generated Content",
-  "high-end-strategic-services":"High End Strategic Services"
+  "high-end-strategic-services": "High End Strategic Services",
 };
 
 export default function Pricing() {
   const params = useParams();
-  const category = (params?.category as string) || "web-design";
+  const category = (params?.category as string) || "digital-presence";
   const plans = getPlansByCategory(category);
 
   return (
@@ -58,7 +58,7 @@ export default function Pricing() {
                     </li>
                   ))}
                 </ul>
-                 <GettingStarted
+                <GettingStarted
                   category={category}
                   plan={plan.name?.toLowerCase() || "bug-fixing"}
                 />

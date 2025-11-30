@@ -60,8 +60,8 @@ export const PunchLine = () => {
     };
   }, []);
 
-   const scrollto3d = () => {
-    const section = document.getElementById("3dcontainer");
+  const scrollto3d = () => {
+    const section = document.getElementById("leftMssg");
     section?.scrollIntoView({ behavior: "smooth" });
   };
 

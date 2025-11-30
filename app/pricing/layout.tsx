@@ -13,7 +13,7 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { name: "Home", href: "/" },
-  { name: "Web design", href: "/pricing/web-design" },
+  { name: "Digital Presence", href: "/pricing/digital-presence" },
   { name: "MVP", href: "/pricing/minimum-viable-product" },
   { name: "Maketing", href: "/pricing/core-paid-marketing" },
   { name: "Email Outreach", href: "/pricing/email-outreach" },

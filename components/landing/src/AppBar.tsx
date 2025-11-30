@@ -8,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { InteractiveHoverButton } from "@/components/ui/hoverBtn";
 gsap.registerPlugin(ScrollTrigger);
 
-export const AppBar = () => {
+export const AppBar = () => {``
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const navRef = useRef(null);
   const handleScrollToServices = () => {
@@ -35,19 +35,19 @@ export const AppBar = () => {
           <ul className="hidden md:flex items-center gap-5 text-[#D9D9D9]">
             <button
               onClick={handleScrollToServices}
-              className="text-[1.1rem] border border-transparent hover:border-white cursor-pointer transition backdrop-blur-2xl bg-transparent shadow-md py-3 px-8 rounded-full"
+              className="text-[1.1rem] border border-transparent hover:border-white cursor-pointer transition backdrop-blur-2xl bg-transparent shadow-md py-2 px-8 rounded-full"
             >
               Services
             </button>
             <Link
               href="https://discord.gg/CeBD2sjsQS"
-              className="text-[1.1rem] border border-transparent hover:border-white transition backdrop-blur-2xl bg-transparent shadow-md py-3 px-8 rounded-full"
+              className="text-[1.1rem] border border-transparent hover:border-white transition backdrop-blur-2xl bg-transparent shadow-md py-2 px-8 rounded-full"
             >
               Help
             </Link>
             <Link
               href="#"
-              className="text-[1.1rem] border border-transparent hover:border-white transition backdrop-blur-2xl bg-transparent shadow-md py-3 px-8 rounded-full"
+              className="text-[1.1rem] border border-transparent hover:border-white transition backdrop-blur-2xl bg-transparent shadow-md py-2 px-8 rounded-full"
             >
               Insight&rsquo;s
             </Link>
