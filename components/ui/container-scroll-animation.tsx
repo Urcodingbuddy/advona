@@ -65,6 +65,7 @@ export const Card = ({
 }) => {
   return (
     <motion.div
+      id="3dcontainer"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{

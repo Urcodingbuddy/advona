@@ -60,6 +60,11 @@ export const PunchLine = () => {
     };
   }, []);
 
+   const scrollto3d = () => {
+    const section = document.getElementById("3dcontainer");
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div
       ref={containerRef}
@@ -90,42 +95,43 @@ export const PunchLine = () => {
           builds, markets, and scales your product into a brand that thrives.
           Focused. Fast. Scalable. Effortless. Strategic. And built to win.
         </motion.p>
-
-        <motion.div
-          ref={scrollButtonRef}
-          className="h-24 flex flex-col items-center justify-center group cursor-pointer mt-6"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0 }}
-        >
-          <motion.p
-            className="text-sm sm:text-base font-semibold text-zinc-400 group-hover:text-zinc-200"
-            animate={{ y: [0, -5, 0] }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              repeatType: "loop",
-              ease: "easeInOut",
-              times: [0, 0.5, 1],
-            }}
-          >
-            Learn More
-          </motion.p>
+        <button onClick={scrollto3d}>
           <motion.div
-            animate={{ y: [0, 10, 0], opacity: [0.6, 1, 0.6] }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              repeatType: "loop",
-              ease: "easeInOut",
-              times: [0, 0.5, 1],
-            }}
+            ref={scrollButtonRef}
+            className="h-24 flex flex-col items-center justify-center group cursor-pointer mt-6"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0 }}
           >
-            <ArrowDown className="text-white h-5 w-5 mt-1 sm:mt-2" />
+            <motion.p
+              className="text-sm sm:text-base font-semibold text-zinc-400 group-hover:text-zinc-200"
+              animate={{ y: [0, -5, 0] }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "easeInOut",
+                times: [0, 0.5, 1],
+              }}
+            >
+              Learn More
+            </motion.p>
+            <motion.div
+              animate={{ y: [0, 10, 0], opacity: [0.6, 1, 0.6] }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "easeInOut",
+                times: [0, 0.5, 1],
+              }}
+            >
+              <ArrowDown className="text-white h-5 w-5 mt-1 sm:mt-2" />
+            </motion.div>
           </motion.div>
-        </motion.div>
+        </button>
       </div>
     </div>
   );

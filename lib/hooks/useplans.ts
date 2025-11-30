@@ -1,5 +1,3 @@
-// lib/hooks/usePlans.ts
-
 export interface Plan {
   name: string;
   category: string;
@@ -45,46 +43,6 @@ const plansData: Record<string, Plan[]> = {
         "Stripe or PayPal integration",
         "Scaling-ready backend",
         "3-month support"
-      ]
-    }
-  ],
-
-  "web-design": [
-    {
-      name: "Web Design Basic",
-      category: "web-design",
-      slug: "web-design-basic",
-      price: 79,
-      feature: [
-        "Up to 2 pages (Home + About/Contact)",
-        "Responsive design",
-        "Custom color palette",
-        "Basic SEO setup"
-      ]
-    },
-    {
-      name: "Web Design Standard",
-      category: "web-design",
-      slug: "web-design-standard",
-      price: 149,
-      feature: [
-        "5-page modern website",
-        "Brand-aligned UI/UX",
-        "Forms and contact integrations",
-        "2 design revisions"
-      ],
-      featured: true
-    },
-    {
-      name: "Web Design Premium",
-      category: "web-design",
-      slug: "web-design-premium",
-      price: 299,
-      feature: [
-        "10+ pages",
-        "CMS, blog or shop integration",
-        "Animations and micro-interactions",
-        "SEO and performance optimization"
       ]
     }
   ],
@@ -243,6 +201,55 @@ const plansData: Record<string, Plan[]> = {
         "90-day brand scale roadmap",
         "Team sync and analytics dashboard",
         "Bi-weekly updates"
+      ]
+    }
+  ],
+
+  "digital-presence": [
+    {
+      name: "Digital Presence Basic",
+      category: "digital-presence",
+      slug: "digital-presence-basic",
+      price: 129,
+      feature: [
+        "Website maintenance (2 updates/month)",
+        "Instagram management (8 posts/month)",
+        "Profile optimization (bio + highlights)",
+        "Basic email outreach (1 campaign/month)",
+        "Monthly analytics summary"
+      ]
+    },
+    {
+      name: "Digital Presence Standard",
+      category: "digital-presence",
+      slug: "digital-presence-standard",
+      price: 199,
+      feature: [
+        "Website improvements (UI tweaks + fixes)",
+        "Social media management (15 posts + reels support)",
+        "Paid ads setup (1 platform)",
+        "Email outreach (2 campaigns/month)",
+        "Lead capture + automation setup",
+        "Monthly strategy call",
+        "Full content calendar"
+      ],
+      featured: true
+    },
+    {
+      name: "Digital Presence Premium",
+      category: "digital-presence",
+      slug: "digital-presence-premium",
+      price: 399,
+      feature: [
+        "Full website management + revamp",
+        "25 posts + 4 reels per month",
+        "Multi-platform ads (Meta + Google)",
+        "UGC-style videos (4–6 per month)",
+        "Email outreach + CRM automation",
+        "Advanced analytics dashboard",
+        "Weekly strategy call",
+        "Dedicated account manager",
+        "90-day growth roadmap"
       ]
     }
   ]

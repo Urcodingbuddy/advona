@@ -1,6 +1,7 @@
 import {
   ArrowRight,
-   Rocket,
+  Globe,
+  Rocket,
   Megaphone,
   Mail,
   Users,
@@ -9,6 +10,12 @@ import {
 import Link from "next/link";
 
 const services = [
+  {
+    title: "Digital Presence",
+    link: "/pricing/digital-presence",
+    description: "Establish a strong online foundation with professional websites, branding, and SEO to boost visibility and credibility.",
+    icon: Globe,
+  },
   {
     title: "Minimum Viable Product",
     link: "/pricing/minimum-viable-product",

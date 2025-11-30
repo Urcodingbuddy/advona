@@ -11,13 +11,14 @@ gsap.registerPlugin(ScrollTrigger);
 export const AppBar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const navRef = useRef(null);
+  const handleScrollToServices = () => {
+    const section = document.getElementById("services_sec");
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <>
-      <nav
-        ref={navRef}
-        className="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-transparent shadow-md"
-      >
+      <nav ref={navRef} className="fixed top-0 left-0 w-full z-50">
         <div className="flex justify-between items-center px-4 md:px-6 py-4">
           <div id="cleven_logo">
             <Link href="/" className="flex items-center gap-3">
@@ -31,29 +32,32 @@ export const AppBar = () => {
           </div>
 
           {/* Desktop Nav */}
-          <ul className="hidden md:flex items-center gap-14 text-[#D9D9D9]">
-            <Link href="#" className="text-[1.1rem] hover:scale-110 transition">
+          <ul className="hidden md:flex items-center gap-5 text-[#D9D9D9]">
+            <button
+              onClick={handleScrollToServices}
+              className="text-[1.1rem] border border-transparent hover:border-white cursor-pointer transition backdrop-blur-2xl bg-transparent shadow-md py-3 px-8 rounded-full"
+            >
               Services
-            </Link>
-            <a
+            </button>
+            <Link
               href="https://discord.gg/CeBD2sjsQS"
-              className="text-[1.1rem] hover:scale-110 transition"
+              className="text-[1.1rem] border border-transparent hover:border-white transition backdrop-blur-2xl bg-transparent shadow-md py-3 px-8 rounded-full"
             >
               Help
-            </a>
+            </Link>
             <Link
-              href="./insights"
-              className="text-[1.1rem] hover:scale-110 transition"
+              href="#"
+              className="text-[1.1rem] border border-transparent hover:border-white transition backdrop-blur-2xl bg-transparent shadow-md py-3 px-8 rounded-full"
             >
               Insight&rsquo;s
             </Link>
-            <a
+            <Link
               href="https://api.whatsapp.com/send?phone=+919241392799"
               target="_blank"
               rel="noopener noreferrer"
             >
               <InteractiveHoverButton>Contact us</InteractiveHoverButton>
-            </a>
+            </Link>
           </ul>
 
           {/* Mobile Menu Button */}
@@ -97,13 +101,13 @@ export const AppBar = () => {
         } duration-300 z-50 shadow-lg`}
       >
         <ul className="flex flex-col h-full items-center justify-evenly text-lg">
-          <Link href="#" className="hover:scale-110 border-b pb-2">
+          <Link href="#" className=" border-b pb-2">
             Services
           </Link>
-          <Link href="/help-center" className="hover:scale-110 border-b pb-2">
+          <Link href="/help-center" className="border-b pb-2">
             Help
           </Link>
-          <Link href="./insights" className="hover:scale-110 border-b pb-2">
+          <Link href="./insights" className="border-b pb-2">
             Insight&rsquo;s
           </Link>
           <a
